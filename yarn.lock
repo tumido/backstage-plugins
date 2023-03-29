@@ -2378,6 +2378,62 @@
     winston "^3.2.1"
     winston-transport "^4.5.0"
 
+"@backstage/backend-common@^0.15.2":
+  version "0.15.2"
+  resolved "https://registry.yarnpkg.com/@backstage/backend-common/-/backend-common-0.15.2.tgz#cfe3968bd88191051ade221b8f0c26763b5be5a3"
+  integrity sha512-vai5DaMIuEUGcqEIZVoGAgtc3kaRo84qD3ao1nOOsL0G05wuuE4BYl9Ip3nPpHKXgUgcS5uRR1qMyIu3jTN7nQ==
+  dependencies:
+    "@backstage/cli-common" "^0.1.10"
+    "@backstage/config" "^1.0.3"
+    "@backstage/config-loader" "^1.1.5"
+    "@backstage/errors" "^1.1.2"
+    "@backstage/integration" "^1.3.2"
+    "@backstage/types" "^1.0.0"
+    "@google-cloud/storage" "^6.0.0"
+    "@keyv/redis" "^2.2.3"
+    "@kubernetes/client-node" "^0.17.0"
+    "@manypkg/get-packages" "^1.1.3"
+    "@octokit/rest" "^19.0.3"
+    "@types/cors" "^2.8.6"
+    "@types/dockerode" "^3.3.0"
+    "@types/express" "^4.17.6"
+    "@types/luxon" "^3.0.0"
+    "@types/webpack-env" "^1.15.2"
+    archiver "^5.0.2"
+    aws-sdk "^2.840.0"
+    base64-stream "^1.0.0"
+    compression "^1.7.4"
+    concat-stream "^2.0.0"
+    cors "^2.8.5"
+    dockerode "^3.3.1"
+    express "^4.17.1"
+    express-promise-router "^4.1.0"
+    fs-extra "10.1.0"
+    git-url-parse "^13.0.0"
+    helmet "^6.0.0"
+    isomorphic-git "^1.8.0"
+    jose "^4.6.0"
+    keyv "^4.0.3"
+    keyv-memcache "^1.2.5"
+    knex "^2.0.0"
+    lodash "^4.17.21"
+    logform "^2.3.2"
+    luxon "^3.0.0"
+    minimatch "^5.0.0"
+    minimist "^1.2.5"
+    morgan "^1.10.0"
+    node-abort-controller "^3.0.1"
+    node-fetch "^2.6.7"
+    raw-body "^2.4.1"
+    request "^2.88.2"
+    selfsigned "^2.0.0"
+    stoppable "^1.1.0"
+    tar "^6.1.2"
+    uuid "^8.3.2"
+    winston "^3.2.1"
+    yauzl "^2.10.0"
+    yn "^4.0.0"
+
 "@backstage/backend-common@^0.17.0":
   version "0.17.0"
   resolved "https://registry.yarnpkg.com/@backstage/backend-common/-/backend-common-0.17.0.tgz#01006f4e4a7731571c15a3df187a5836ff51e39a"
@@ -2688,6 +2744,11 @@
     lodash "^4.17.21"
     uuid "^8.0.0"
 
+"@backstage/cli-common@^0.1.10", "@backstage/cli-common@^0.1.12":
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/@backstage/cli-common/-/cli-common-0.1.12.tgz#8e1ea10da38554b9bc910e0da532b73af4669a2f"
+  integrity sha512-CoXAcIQprLAuk4gsJyqrZHRyZ5Mpfpr87lBzhSBWgriMTVgKH5bfMqZmGzm5TTZRlOIX09RLINp9e3kLkfO3Fg==
+
 "@backstage/cli-common@^0.1.11":
   version "0.1.11"
   resolved "https://registry.yarnpkg.com/@backstage/cli-common/-/cli-common-0.1.11.tgz#9d8fd8cbe83e21ad3d207edecb3c3df3024a35a8"
@@ -2898,6 +2959,27 @@
     yml-loader "^2.1.0"
     yn "^4.0.0"
     zod "~3.18.0"
+
+"@backstage/config-loader@^1.1.5":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@backstage/config-loader/-/config-loader-1.1.9.tgz#4fb327b5adc52ba7569ac68defc22f02eafad7c5"
+  integrity sha512-cqC9B1c7h1dvE/xXmE6U4s2FvfPI+kHS2daS7a+sIx3fnEuZQLbP63PGdMqvbOXF3dd+tX1JTYg6cunsDYzIRg==
+  dependencies:
+    "@backstage/cli-common" "^0.1.12"
+    "@backstage/config" "^1.0.7"
+    "@backstage/errors" "^1.1.5"
+    "@backstage/types" "^1.0.2"
+    "@types/json-schema" "^7.0.6"
+    ajv "^8.10.0"
+    chokidar "^3.5.2"
+    fs-extra "10.1.0"
+    json-schema "^0.4.0"
+    json-schema-merge-allof "^0.8.1"
+    json-schema-traverse "^1.0.0"
+    node-fetch "^2.6.7"
+    typescript-json-schema "^0.55.0"
+    yaml "^2.0.0"
+    yup "^0.32.9"
 
 "@backstage/config-loader@^1.1.7", "@backstage/config-loader@^1.1.8":
   version "1.1.8"
@@ -3235,13 +3317,13 @@
     "@material-ui/lab" "4.0.0-alpha.57"
     react-use "^17.2.4"
 
-"@backstage/integration@^1.4.1", "@backstage/integration@^1.4.2":
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/@backstage/integration/-/integration-1.4.2.tgz#5a0d6e6215d46b05055804c06a2e54bad501fb6e"
-  integrity sha512-vWclxqDvOYDPPBXOiaN5HTcGlWR/Mdk8etZu4u24DLlvqmKRVOG3UFajf1VoNcEZqtkN08QsfbhoiQHE4mmHxg==
+"@backstage/integration@^1.3.2", "@backstage/integration@^1.4.3":
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@backstage/integration/-/integration-1.4.3.tgz#2796ed0fe804f88ec30fdca7942d0c95a388ccac"
+  integrity sha512-1wHBO3xJdm1EhYrxisnU2fpDGy83n4n1YfnUm4xveXbN3/l8Zpmi95+F0p/91t1vq01PD/jVb14Q+yizL5u4Hw==
   dependencies:
-    "@backstage/config" "^1.0.6"
-    "@backstage/errors" "^1.1.4"
+    "@backstage/config" "^1.0.7"
+    "@backstage/errors" "^1.1.5"
     "@octokit/auth-app" "^4.0.0"
     "@octokit/rest" "^19.0.3"
     cross-fetch "^3.1.5"
@@ -3249,13 +3331,13 @@
     lodash "^4.17.21"
     luxon "^3.0.0"
 
-"@backstage/integration@^1.4.3":
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/@backstage/integration/-/integration-1.4.3.tgz#2796ed0fe804f88ec30fdca7942d0c95a388ccac"
-  integrity sha512-1wHBO3xJdm1EhYrxisnU2fpDGy83n4n1YfnUm4xveXbN3/l8Zpmi95+F0p/91t1vq01PD/jVb14Q+yizL5u4Hw==
+"@backstage/integration@^1.4.1", "@backstage/integration@^1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@backstage/integration/-/integration-1.4.2.tgz#5a0d6e6215d46b05055804c06a2e54bad501fb6e"
+  integrity sha512-vWclxqDvOYDPPBXOiaN5HTcGlWR/Mdk8etZu4u24DLlvqmKRVOG3UFajf1VoNcEZqtkN08QsfbhoiQHE4mmHxg==
   dependencies:
-    "@backstage/config" "^1.0.7"
-    "@backstage/errors" "^1.1.5"
+    "@backstage/config" "^1.0.6"
+    "@backstage/errors" "^1.1.4"
     "@octokit/auth-app" "^4.0.0"
     "@octokit/rest" "^19.0.3"
     cross-fetch "^3.1.5"
@@ -4361,7 +4443,7 @@
   dependencies:
     "@material-ui/core" "^4.12.2"
 
-"@backstage/types@^1.0.2":
+"@backstage/types@^1.0.0", "@backstage/types@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@backstage/types/-/types-1.0.2.tgz#a12cdc7c1ec7e0d99cb2e30903b9dfd97c1050c9"
   integrity sha512-wE4AAP3je00UlVNV5faIto414aOUNv30CmvNmxgImNKelPRYJsMEicM9slwkrNMyFLqTMITeXJvQvMofUk3Wxg==
@@ -5211,6 +5293,20 @@
     "@types/yargs" "^17.0.8"
     chalk "^4.0.0"
 
+"@jquad-group/plugin-tekton-pipelines-backend@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@jquad-group/plugin-tekton-pipelines-backend/-/plugin-tekton-pipelines-backend-0.3.1.tgz#4ad8f3f93067087212a0141bbe1b55041713998d"
+  integrity sha512-1oFpCO7B3aSKNFhaYsfrO9V2CmiZFulDyicjZ6sRlFygxocOAkkWKwlL85Ns5XR9ioVV6gLXBRniVH0H1+G0tg==
+  dependencies:
+    "@backstage/backend-common" "^0.15.2"
+    "@backstage/config" "^1.0.3"
+    "@types/express" "*"
+    express "^4.17.1"
+    express-promise-router "^4.1.0"
+    node-fetch "^2.6.7"
+    winston "^3.2.1"
+    yn "^4.0.0"
+
 "@jquad-group/plugin-tekton-pipelines-common@0.3.1":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@jquad-group/plugin-tekton-pipelines-common/-/plugin-tekton-pipelines-common-0.3.1.tgz#8e275ddf338920858050739ac0e8d4d441e14e1f"
@@ -5327,6 +5423,13 @@
     json-buffer "^3.0.1"
     memjs "^1.3.0"
 
+"@keyv/redis@^2.2.3":
+  version "2.5.6"
+  resolved "https://registry.yarnpkg.com/@keyv/redis/-/redis-2.5.6.tgz#e1e0cb1f432222c54b4a20324a9eeeb1ed77fe13"
+  integrity sha512-WxR9x/TjGptVM5Vi1IyMqtZ+iAPMY8jh2NkGrHWnvrtGUDll4PyY2GbXkOTC0msGVXuV1JqPEHIM7M648O+Pfg==
+  dependencies:
+    ioredis "^5.3.1"
+
 "@keyv/redis@^2.5.3":
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/@keyv/redis/-/redis-2.5.5.tgz#ef1c0008f5958c2ed63781830e5be4a7b666c0e6"
@@ -5383,6 +5486,28 @@
     ws "^8.11.0"
   optionalDependencies:
     openid-client "^5.3.0"
+
+"@kubernetes/client-node@^0.17.0":
+  version "0.17.1"
+  resolved "https://registry.yarnpkg.com/@kubernetes/client-node/-/client-node-0.17.1.tgz#a5740712848d77823e7d0eee70229936398b4142"
+  integrity sha512-qXANjukuTq/drb1hq1NCYZafpdRTvbyTzbliWO6RwW7eEb2b9qwINbw0DiVHpBQg3e9DeQd8+brI1sR1Fck5kQ==
+  dependencies:
+    byline "^5.0.0"
+    execa "5.0.0"
+    isomorphic-ws "^4.0.1"
+    js-yaml "^4.1.0"
+    jsonpath-plus "^0.19.0"
+    request "^2.88.0"
+    rfc4648 "^1.3.0"
+    shelljs "^0.8.5"
+    stream-buffers "^3.0.2"
+    tar "^6.1.11"
+    tmp-promise "^3.0.2"
+    tslib "^1.9.3"
+    underscore "^1.9.1"
+    ws "^7.3.1"
+  optionalDependencies:
+    openid-client "^5.1.6"
 
 "@leichtgewicht/ip-codec@^2.0.1":
   version "2.0.4"
@@ -7868,9 +7993,9 @@
   integrity sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==
 
 "@types/react-dom@17.0.18", "@types/react-dom@<18.0.0", "@types/react-dom@^17":
-  version "17.0.18"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.18.tgz#8f7af38f5d9b42f79162eea7492e5a1caff70dc2"
-  integrity sha512-rLVtIfbwyur2iFKykP2w0pl/1unw26b5td16d5xMgp7/yjTHomkyxPYChFoCr/FtEX1lN9wY6lFj1qvKdS5kDw==
+  version "17.0.19"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.19.tgz#36feef3aa35d045cacd5ed60fe0eef5272f19492"
+  integrity sha512-PiYG40pnQRdPHnlf7tZnp0aQ6q9tspYr72vD61saO6zFCybLfMqwUCN0va1/P+86DXn18ZWeW30Bk7xlC5eEAQ==
   dependencies:
     "@types/react" "^17"
 
@@ -8675,6 +8800,7 @@ anymatch@^3.0.3, anymatch@~3.1.2:
     "@backstage/plugin-techdocs-react" "^1.1.2"
     "@backstage/plugin-user-settings" "^0.6.2"
     "@backstage/theme" "^0.2.16"
+    "@janus-idp/backstage-plugin-tekton" "*"
     "@material-ui/core" "^4.12.2"
     "@material-ui/icons" "^4.9.1"
     history "^5.0.0"
@@ -14423,6 +14549,21 @@ ioredis@^5.3.0:
     redis-parser "^3.0.0"
     standard-as-callback "^2.1.0"
 
+ioredis@^5.3.1:
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-5.3.1.tgz#55d394a51258cee3af9e96c21c863b1a97bf951f"
+  integrity sha512-C+IBcMysM6v52pTLItYMeV4Hz7uriGtoJdz7SSBDX6u+zwSYGirLdQh3L7t/OItWITcw3gTFMjJReYUwS4zihg==
+  dependencies:
+    "@ioredis/commands" "^1.1.1"
+    cluster-key-slot "^1.1.0"
+    debug "^4.3.4"
+    denque "^2.1.0"
+    lodash.defaults "^4.2.0"
+    lodash.isarguments "^3.1.0"
+    redis-errors "^1.2.0"
+    redis-parser "^3.0.0"
+    standard-as-callback "^2.1.0"
+
 ip-regex@^4.1.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/ip-regex/-/ip-regex-4.3.0.tgz#687275ab0f57fa76978ff8f4dddc8a23d5990db5"
@@ -15893,7 +16034,15 @@ keycloak-js@^17.0.1:
     base64-js "^1.5.1"
     js-sha256 "^0.9.0"
 
-keyv@^4.0.0, keyv@^4.5.2:
+keyv-memcache@^1.2.5:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/keyv-memcache/-/keyv-memcache-1.3.3.tgz#07343ae4e4cc1373ecca83657c246c616f9b0b7d"
+  integrity sha512-7k+0Ju2KPkS+a22MdgUW/MPAYyo736joxfrWFUsgiUY7ssu/tT6hxfWjxubQBNeG93dHRTBAF0oFUtSSVYTW0Q==
+  dependencies:
+    json-buffer "^3.0.1"
+    memjs "^1.3.0"
+
+keyv@^4.0.0, keyv@^4.0.3, keyv@^4.5.2:
   version "4.5.2"
   resolved "https://registry.yarnpkg.com/keyv/-/keyv-4.5.2.tgz#0e310ce73bf7851ec702f2eaf46ec4e3805cce56"
   integrity sha512-5MHbFaKn8cNSmVW7BYnijeAVlE4cYA/SVkifVgrh7yotnfhKmjuXpDKjrABLnT0SfHWV21P8ow07OGfRrNDg8g==
@@ -18352,7 +18501,7 @@ opener@^1.5.2:
   resolved "https://registry.yarnpkg.com/opener/-/opener-1.5.2.tgz#5d37e1f35077b9dcac4301372271afdeb2a13598"
   integrity sha512-ur5UIdyw5Y7yEj9wLzhqXiy6GZ3Mwx0yGI+5sMn2r0N0v3cKJvUmFH5yPP+WXh9e0xfyzyJX95D8l088DNFj7A==
 
-openid-client@^5.2.1, openid-client@^5.3.0:
+openid-client@^5.1.6, openid-client@^5.2.1, openid-client@^5.3.0:
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/openid-client/-/openid-client-5.4.0.tgz#77f1cda14e2911446f16ea3f455fc7c405103eac"
   integrity sha512-hgJa2aQKcM2hn3eyVtN12tEA45ECjTJPXCgUh5YzTzy9qwapCvmDTVPWOcWVL0d34zeQoQ/hbG9lJhl3AYxJlQ==
@@ -22470,7 +22619,7 @@ tsconfig-paths@^4.1.2:
     minimist "^1.2.6"
     strip-bom "^3.0.0"
 
-tslib@^1.11.1, tslib@^1.8.1:
+tslib@^1.11.1, tslib@^1.8.1, tslib@^1.9.3:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
@@ -22680,7 +22829,7 @@ unbox-primitive@^1.0.2:
     has-symbols "^1.0.3"
     which-boxed-primitive "^1.0.2"
 
-underscore@^1.12.1, underscore@^1.13.6, underscore@~1.13.2:
+underscore@^1.12.1, underscore@^1.13.6, underscore@^1.9.1, underscore@~1.13.2:
   version "1.13.6"
   resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.13.6.tgz#04786a1f589dc6c09f761fc5f45b89e935136441"
   integrity sha512-+A5Sja4HP1M08MaXya7p5LvjuM7K6q/2EaC0+iovj/wOcMsTzMvDFbasi/oSapiwOlt252IqsKqPjCl7huKS0A==

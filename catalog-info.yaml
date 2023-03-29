@@ -3,6 +3,8 @@ kind: Component
 metadata:
   name: janus-idp-backstage-plugins
   description: An example of a Backstage application.
+  annotations:
+    tektonci/build-namespace: aicoe-meteor
 spec:
   type: website
   owner: group:janus-idp

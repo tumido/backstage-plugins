@@ -9,7 +9,7 @@ import { TektonBackendClient } from './api/TektonBackendClient';
 import { tektonPluginApiRef } from './api/types';
 
 export const tektonPlugin = createPlugin({
-  id: 'tekton',
+  id: 'tekton-pipelines',
   apis: [
     createApiFactory({
       api: tektonPluginApiRef,
