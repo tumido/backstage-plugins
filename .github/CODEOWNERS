@@ -12,17 +12,24 @@
 # This should make it easy to add new rules without breaking existing ones.
 
 # Global rule:
-*                            @janus-idp/maintainers-plugins
-yarn.lock                    @janus-idp/maintainers-plugins
-*/yarn.lock                  @janus-idp/maintainers-plugins
+*                                        @janus-idp/maintainers-plugins
+yarn.lock                                @janus-idp/maintainers-plugins
+*/yarn.lock                              @janus-idp/maintainers-plugins
+package.json                             @janus-idp/maintainers-plugins 139477802+janus-idp[bot]@users.noreply.github.com
+*/package.json                           @janus-idp/maintainers-plugins 139477802+janus-idp[bot]@users.noreply.github.com
+
 
 # Documentation:
-*.md                         @janus-idp/maintainers-docs
+*.md                                     @janus-idp/maintainers-docs
 
 # Plugin specific owners:
-/plugins/jfrog-artifactory/  @janus-idp/maintainers-plugins @fmenesesg
-/plugins/3scale-backend/     @janus-idp/maintainers-plugins @fmenesesg
-/plugins/quay/               @janus-idp/maintainers-plugins @fmenesesg
-/plugins/topology/           @janus-idp/maintainers-plugins @debsmita1 @divyanshiGupta
-/plugins/tekton/             @janus-idp/maintainers-plugins @debsmita1 @divyanshiGupta
-
+/plugins/jfrog-artifactory/              @janus-idp/maintainers-plugins @fmenesesg
+/plugins/jfrog-artifactory/package.json  @janus-idp/maintainers-plugins @fmenesesg 139477802+janus-idp[bot]@users.noreply.github.com
+/plugins/3scale-backend/                 @janus-idp/maintainers-plugins @fmenesesg
+/plugins/3scale-backend/package.json     @janus-idp/maintainers-plugins @fmenesesg 139477802+janus-idp[bot]@users.noreply.github.com
+/plugins/quay/                           @janus-idp/maintainers-plugins @fmenesesg
+/plugins/quay/package.json               @janus-idp/maintainers-plugins @fmenesesg 139477802+janus-idp[bot]@users.noreply.github.com
+/plugins/topology/                       @janus-idp/maintainers-plugins @debsmita1 @divyanshiGupta
+/plugins/topology/package.json           @janus-idp/maintainers-plugins @debsmita1 @divyanshiGupta 139477802+janus-idp[bot]@users.noreply.github.com
+/plugins/tekton/                         @janus-idp/maintainers-plugins @debsmita1 @divyanshiGupta
+/plugins/tekton/package.json             @janus-idp/maintainers-plugins @debsmita1 @divyanshiGupta 139477802+janus-idp[bot]@users.noreply.github.com
