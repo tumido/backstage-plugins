@@ -74,7 +74,10 @@ export const parseUser = (
   spec: {
     profile: {
       email: user.email,
-      displayName: [user.firstName, user.lastName].filter(Boolean).join(' '),
+      displayName:
+        user.firstName || user.lastName
+          ? [user.firstName, user.lastName].filter(Boolean).join(' ')
+          : undefined,
     },
     memberOf: groups
       .filter(g => g.members?.includes(user.username!))
