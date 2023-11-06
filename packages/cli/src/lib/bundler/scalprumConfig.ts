@@ -37,6 +37,10 @@ export const sharedModules = {
     singleton: true,
     requiredVersion: '*',
   },
+  '@backstage/config': {
+    singleton: true,
+    requiredVersion: '*',
+  },
   '@backstage/core-app-api': {
     singleton: true,
     requiredVersion: '*',
